@@ -24,15 +24,15 @@ const Header = (props) => {
                 </div>
             </a>
             <nav id="swup" class="site-head-left">
-                <ul className="nav" role="menu">
+                <ul className="nav" role="menu"> {/*поменять подстветку при выбранном элементе меню*/}
                     <li className="nav-home nav-current" role="menuitem">
-                        <Link to={`/`}>Home</Link>
+                        <Link to={`/`}>Главная</Link>
                     </li>
                     <li className="nav-about" role="menuitem">
-                        <Link to={`/about`}>About</Link>
+                        <Link to={`/about`}>О нас</Link>
                     </li>
                     <li className="nav-elements" role="menuitem">
-                        <Link to={`/elements`}>Elements</Link>
+                        <Link to={`/elements`}>Элементы</Link>
                     </li>
                 </ul>
             </nav>
@@ -43,14 +43,9 @@ const Header = (props) => {
             </div>
             <div className="site-head-right">
                 <div className="social-links">
-                    <a
-                        href="https://www.facebook.com"
-                        title="Facebook"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Facebook
-                    </a>
+                    <Link to="/contacts" className="nav-contacts" role="menuitem">
+                        Свяжись с нами
+                    </Link>
                     <a
                         href="https://twitter.com"
                         title="Twitter"
@@ -58,7 +53,8 @@ const Header = (props) => {
                         rel="noopener noreferrer"
                     >
                         Twitter
-                    </a>
+                    </a>{/*поменять на иконки*/}
+
                     <Link
                         to={`/rss.xml`}
                         title="RSS"
