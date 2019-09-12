@@ -4,7 +4,7 @@ const siteConfig = require("./siteConfig")
 module.exports = {
   pathPrefix: "/gatsby-template-genesis-2",
   siteMetadata: {
-    title: siteConfig.name,
+    title: siteConfig.title,
     author: siteConfig.author,
     description: siteConfig.description,
     siteUrl: urljoin(siteConfig.url, siteConfig.prefix),

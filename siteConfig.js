@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'Genesis',
+  title: 'Genesis',
   shortName: 'Genesis',
   description: 'Genesis - разработка web-проектов, консалтинговые услуги, project resque  ',
   url: 'http://localhost:8000', //добавить url сайта, когда появится

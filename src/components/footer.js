@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 const Footer = (props) => {
-    const [toggleNav, setToggleNav] = React.useState(false)
 
     return (
         <footer className="site-foot">
