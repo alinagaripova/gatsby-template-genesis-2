@@ -3,6 +3,14 @@ import { Link } from "gatsby"
 import Header from './header'
 import Footer from "./footer";
 
+export const query = graphql`
+  fragment SiteInformation on Site {
+    siteMetadata {
+      title
+      description
+      }
+  }
+`
 
 const Layout = props => {
   const { title, children } = props

@@ -11,9 +11,7 @@ import "../utils/css/screen.css"
 export const query = graphql`
   query indexQuery {
     site {
-      siteMetadata {
-        title
-      }
+      ...SiteInformation
     }
     benchAccounting: file(
         relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }

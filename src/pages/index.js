@@ -48,10 +48,7 @@ const BlogIndex = ({ data }, location) => {
 const indexQuery = graphql`
   query {
     site {
-      siteMetadata {
-        title
-        description
-      }
+      ...SiteInformation
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {

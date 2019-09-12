@@ -10,13 +10,10 @@ import "../utils/css/screen.css"
 export const query = graphql`
   query contactQuery {
     site {
-      siteMetadata {
-        title
-      }
+      ...SiteInformation
     }
   }
 `
-//сделать фрагмент запроса
 
 const ContactsPage = ({ data }) => {
     const siteTitle = data.site.siteMetadata.title
