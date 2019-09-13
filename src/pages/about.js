@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import {graphql} from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -25,54 +25,53 @@ export const query = graphql`
   }
 `
 
-const AboutPage = ({ data }) => {
-  const siteTitle = data.site.siteMetadata.title
+const AboutPage = ({data}) => {
+    const siteTitle = data.site.siteMetadata.title
 
-  return (
-    <Layout title={siteTitle}>
-      <SEO title="О нас" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
+    return (
+        <Layout title={siteTitle}>
+            <SEO title="О нас" keywords={[`blog`, `gatsby`, `javascript`, `react`]}/>
 
-      <article className="post-content page-template no-image">
-        <div className="post-content-body">
-          <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
-              О нас
-          </h2>
-          <figure className="kg-card kg-image-card kg-width-full">
-            <Img
-              fluid={data.benchAccounting.childImageSharp.fluid}
-              className="kg-image"
-            />
-            <figcaption>С любовью, Genesis</figcaption>
-          </figure>
-          <h3 id="dynamic-styles">О компании</h3>
-          <p>
-            Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.
-              Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.
-          </p>
-          <p>
-              Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.
-              Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.
-              Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.{" "}
-            <a href="http://headmade.pro/">
-                Подробнее
-            </a>{" "}
-              Информация о компании и чем мы занимаемся.
-          </p>
-          <p>
-              Информация о компании и чем мы занимаемся.{" "}
-            <a href="http://headmade.pro/">
-                Подробнее
-            </a>{" "}
-              Информация о компании и чем мы занимаемся.
-          </p>
-        </div>
-      </article>
-    </Layout>
-  )
+            <article className="post-content page-template no-image">
+                <div className="post-content-body">
+                    <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
+                        О нас
+                    </h2>
+                    <figure className="kg-card kg-image-card kg-width-full">
+                        <Img
+                            fluid={data.benchAccounting.childImageSharp.fluid}
+                            className="kg-image"
+                        />
+                        <figcaption>С любовью, Genesis</figcaption>
+                    </figure>
+                    <h3 id="dynamic-styles">О компании</h3>
+                    <p>
+                        Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.
+                        Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.
+                    </p>
+                    <p>
+                        Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.
+                        Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.
+                        Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.{" "}
+                        <a href="http://headmade.pro/">
+                            Подробнее
+                        </a>{" "}
+                        Информация о компании и чем мы занимаемся.
+                    </p>
+                    <p>
+                        Информация о компании и чем мы занимаемся.{" "}
+                        <a href="http://headmade.pro/">
+                            Подробнее
+                        </a>{" "}
+                        Информация о компании и чем мы занимаемся.
+                    </p>
+                </div>
+            </article>
+        </Layout>
+    )
 }
 
 export default AboutPage
-
 
 
 // export default props => (
