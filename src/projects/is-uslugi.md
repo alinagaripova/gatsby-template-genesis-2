@@ -1,6 +1,7 @@
 ---
 name: "project"
 path: "/is-uslugi/"
+imgUrl: "../img/projects/is-uslugi.png"
 order: 99
 title: "ИС Услуги"
 tags: ["ruby", "ruby-on-rails", "react"]

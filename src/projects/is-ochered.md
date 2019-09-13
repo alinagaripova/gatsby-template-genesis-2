@@ -1,6 +1,7 @@
 ---
 name: "project"
 path: "/is-ochered/"
+imgUrl: "../img/projects/is-ochered.png"
 order: 65
 title: "ИС Очередь"
 tags: ["go", "angular"]

@@ -14,7 +14,6 @@ export const query = graphql`
     }
   }
 `
-//добавить картинки проектов как на главной и при клике подробнее о проекте
 
 const ContactsPage = ({data}) => {
     const siteTitle = data.site.siteMetadata.title

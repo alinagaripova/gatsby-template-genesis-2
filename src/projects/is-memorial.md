@@ -1,6 +1,7 @@
 ---
 name: "project"
 path: "/is-memorial/"
+imgUrl: "../img/projects/is-memorial.png"
 order: 70
 title: "ИС Мемориал"
 tags: ["ruby", "ruby-on-rails", "angular"]
