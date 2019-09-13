@@ -1,7 +1,7 @@
 ---
 name: "project"
 path: "/is-mnenie/"
-imgUrl: "../img/projects/is-mnenie.png"
+thumbnail: "./is-mnenie.png"
 order: 80
 title: "ИС Мнение"
 tags: ["ruby", "ruby-on-rails", "react"]

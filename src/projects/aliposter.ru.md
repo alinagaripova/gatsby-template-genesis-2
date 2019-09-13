@@ -1,7 +1,7 @@
 ---
 name: "project"
 path: "/aliposter.ru/"
-imgUrl: "../img/projects/aliposter.png"
+thumbnail: "./aliposter.png"
 order: 40
 title: "Aliposter"
 tags: ["ruby", "ruby-on-rails", "javascript"]

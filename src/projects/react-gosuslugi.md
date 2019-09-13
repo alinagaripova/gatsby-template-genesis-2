@@ -1,7 +1,7 @@
 ---
 name: "project"
 path: "/react-gosuslugi/"
-imgUrl: "../img/projects/react-gosuslugi.png"
+thumbnail: "./react-gosuslugi.png"
 order: 30
 title: "react-gosuslugi"
 tags: ["ruby", "react"]

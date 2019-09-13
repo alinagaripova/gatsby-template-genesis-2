@@ -1,7 +1,7 @@
 ---
 name: "project"
 path: "/tovar.link/"
-imgUrl: "../img/projects/tovarlink.png"
+thumbnail: "./tovarlink.png"
 order: 50
 title: "Tovar.link"
 tags: ["go", "redis", "javascript"]

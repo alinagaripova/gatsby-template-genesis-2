@@ -1,7 +1,7 @@
 ---
 name: "project"
 path: "/metshin.ru/"
-imgUrl: "../img/projects/metshin.png"
+thumbnail: "./metshin.png"
 order: 60
 title: "Официальный сайт мэра Казани"
 tags: ["ruby", "ruby-on-rails", "javascript"]
