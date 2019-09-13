@@ -17,7 +17,7 @@ export const query = graphql`
         relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1360) {
+        fluid(maxWidth: 1560, maxHeight: 400) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -44,26 +44,26 @@ const AboutPage = ({ data }) => {
             />
             <figcaption>С любовью, Genesis</figcaption>
           </figure>
-          <h3 id="dynamic-styles">Dynamic styles</h3>
+          <h3 id="dynamic-styles">О компании</h3>
           <p>
-            London comes with photo-centric main layout best suited to
-            photography, graphics portfolios and other image-heavy uses.
+            Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.
+              Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.
           </p>
           <p>
-            Both post and page templates are light and minimal, with all the
-            focus on the content while the design of the theme gets out of the
-            way. Beneath the hood, London enjoys the full power of the{" "}
-            <a href="https://docs.ghost.org/api/handlebars-themes/">
-              Ghost Handlebars Theme API
+              Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.
+              Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.
+              Информация о компании и чем мы занимаемся.Информация о компании и чем мы занимаемся.{" "}
+            <a href="http://headmade.pro/">
+                Подробнее
             </a>{" "}
-            to provide limitless customisation options and dynamic styles.
+              Информация о компании и чем мы занимаемся.
           </p>
           <p>
-            Don't forget to check out the{" "}
-            <a href="https://docs.ghost.org/integrations/">
-              Ghost Integrations Directory
+              Информация о компании и чем мы занимаемся.{" "}
+            <a href="http://headmade.pro/">
+                Подробнее
             </a>{" "}
-            for more ways to integrate Ghost with your favourite services.
+              Информация о компании и чем мы занимаемся.
           </p>
         </div>
       </article>
