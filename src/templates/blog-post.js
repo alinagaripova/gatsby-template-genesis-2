@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
+      console.log(post)
     const siteTitle = this.props.data.site.siteMetadata.title
 
     return (
