@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import {graphql} from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -17,6 +17,9 @@ export const query = graphql`
       frontmatter {
         title
         description
+        technologies
+        statistics
+        href
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 1360) {
@@ -36,35 +39,31 @@ class ProjectsTemplate extends React.Component {
 
         return (
             <Layout title={siteTitle}>
-                <SEO
-                    title={post.frontmatter.title}
-                    description={post.frontmatter.description}
-                />
-                <article
-                    className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
-                >
+                <SEO title={post.frontmatter.title} description={post.frontmatter.description}/>
+                <article className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}>
                     <header className="post-content-header">
                         <h1 className="post-content-title">{post.frontmatter.title}</h1>
                     </header>
+                    <p class="post-content-excerpt">{post.frontmatter.description}</p>
+                    <div className="post-content-image">
+                        <Img className="kg-image" fluid={post.frontmatter.thumbnail.childImageSharp.fluid} alt={post.frontmatter.title}/>
+                    </div>
 
-                    {post.frontmatter.description && (
-                        <p class="post-content-excerpt">{post.frontmatter.description}</p>
-                    )}
-
-                    {post.frontmatter.thumbnail && (
-                        <div className="post-content-image">
-                            <Img
-                                className="kg-image"
-                                fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
-                                alt={post.frontmatter.title}
-                            />
-                        </div>
-                    )}
-
-                    <div
-                        className="post-content-body"
-                        dangerouslySetInnerHTML={{ __html: post.html }}
-                    />
+                    <h4 id="unordered">Технологии:</h4>
+                    <ul>
+                        {post.frontmatter.technologies.map(technology =>
+                            <li>{technology}</li>
+                        )}
+                    </ul>
+                    <h4 id="unordered">Интересные факты:</h4>
+                    <ul>
+                        {post.frontmatter.statistics.map(statistic =>
+                            <li>{statistic}</li>
+                        )}
+                    </ul>
+                    <a href={post.frontmatter.href} className="button primary large">
+                        {post.frontmatter.title}
+                    </a>
 
                     <footer className="post-content-footer">
                         {/* There are two options for how we display the byline/author-info.
